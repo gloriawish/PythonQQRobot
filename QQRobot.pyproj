@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{10b16c35-5363-4914-bdd3-96c17e8c66e6}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>QQRobot.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>QQRobot</Name>
+    <RootNamespace>QQRobot</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="hash.py" />
+    <Compile Include="login.py" />
+    <Compile Include="module1.py" />
+    <Compile Include="pic2ascii.py" />
+    <Compile Include="QQRobot.py" />
+    <Compile Include="QQRobot_new.py" />
+    <Compile Include="TcpHiClient.py" />
+    <Compile Include="tcpserver.py" />
+    <Compile Include="test2.py" />
+    <Compile Include="Tool.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>
